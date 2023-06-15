@@ -3,9 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Movie API Documentation</title>
+    <link rel="stylesheet" href="documentation.css" />
   </head>
   <body>
-    Bla bla Blub
+    <header></header>
+    <main>
+      <h1>Movie API</h1>
+      <p>
+        Returns a list of movies or data about a single movie, genre or
+        director. Also allows users to register, update their user
+        info(username), add or remove movies from their list of favorites or
+        deregister.
+      </p>
+      <h2>Resource Information</h2>
+      <table>
+        <tr>
+          <th>Business Logic</th>
+          <th>URL</th>
+          <th>HTTP Method</th>
+          <th>Request body data format</th>
+          <th>Response body data format</th>
+        </tr>
+        <tr>
+          <td>Return a list of movies to the user</td>
+          <td>/movies</td>
+          <td class="method">GET</td>
+          <td>none</td>
+          <td>A JSON object holding data about all the movies</td>
+        </tr>
+        <tr>
+          <td>
+            Return data (description, genre, director, image URL, whether it’s
+            featured or not) about a single movie by name
+          </td>
+          <td>/movies/[name]</td>
+          <td class="method">GET</td>
+          <td>none</td>
+          <td>A JSON object holding data about the movie</td>
+        </tr>
+        <tr>
+          <td>Return data about a genre by name</td>
+          <td>/genres/[name]</td>
+          <td class="method">GET</td>
+          <td>none</td>
+          <td>A JSON object holding data about the genre</td>
+        </tr>
+        <tr>
+          <td>
+            Return data (bio, birth year, death year) about a director by name
+          </td>
+          <td>/directors/[name]</td>
+          <td class="method">GET</td>
+          <td>none</td>
+          <td>A JSON object holding data about the genre</td>
+        </tr>
+        <tr>
+          <td>Allow new user to register</td>
+          <td>/users</td>
+          <td class="method">POST</td>
+          <td>A JSON object holding data about the user to add</td>
+          <td>A JSON object holding data about the user that was added</td>
+        </tr>
+        <tr>
+          <td>Allow new user to update their info (username)</td>
+          <td>/users/[name]</td>
+          <td class="method">PUT</td>
+          <td>A JSON object holding data about the user to add</td>
+          <td>A JSON object holding data about the user that was added</td>
+        </tr>
+        <tr>
+          <td>Allow new user to add a movie to their list of favorites</td>
+          <td>/users/[name]/favorites</td>
+          <td class="method">PUT</td>
+          <td>none</td>
+          <td>A JSON object holding data about the user that was added</td>
+        </tr>
+        <tr>
+          <td>Allow new user to remove a movie from their list of favorites</td>
+          <td>/users/[name]/favorites</td>
+          <td class="method">DELETE</td>
+          <td>none</td>
+          <td>A JSON object holding data about the user that was added</td>
+        </tr>
+        <tr>
+          <td>Allow new user to deregister</td>
+          <td>/users/[name]</td>
+          <td class="method">DELETE</td>
+          <td>none</td>
+          <td>A JSON object holding data about the user that was added</td>
+        </tr>
+      </table>
+    </main>
+    <footer></footer>
   </body>
 </html>

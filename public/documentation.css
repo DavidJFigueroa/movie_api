@@ -1,0 +1,41 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+header {
+  background-color: lightgray;
+  height: 100px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+th {
+  background-color: lightgray;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px 10px;
+}
+
+.method {
+  font-weight: bold;
+  color: red;
+}
+
+footer {
+  background-color: lightgray;
+  height: 100px;
+  margin-top: 20px;
+}
