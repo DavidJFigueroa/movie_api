@@ -78,3 +78,4 @@ Timestamp: Tue Jun 13 2023 22:45:37 GMT+0200 (Central European Summer Time)
 ::1 - - [15/Jun/2023:14:42:51 +0000] "PUT /users/david HTTP/1.1" 200 53 "-" "PostmanRuntime/7.32.2"
 ::1 - - [15/Jun/2023:14:43:24 +0000] "PUT /users/david/favorites HTTP/1.1" 200 69 "-" "PostmanRuntime/7.32.2"
 ::1 - - [15/Jun/2023:14:44:48 +0000] "DELETE /users HTTP/1.1" 200 49 "-" "PostmanRuntime/7.32.2"
+::1 - - [15/Jun/2023:14:48:16 +0000] "DELETE /users/david/favorites HTTP/1.1" 200 74 "-" "PostmanRuntime/7.32.2"
