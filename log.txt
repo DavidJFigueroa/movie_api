@@ -22,3 +22,6 @@ Timestamp: Tue Jun 13 2023 22:45:37 GMT+0200 (Central European Summer Time)
 URL: /favicon.ico
 Timestamp: Tue Jun 13 2023 22:45:37 GMT+0200 (Central European Summer Time)
 
+::1 - - [15/Jun/2023:09:37:48 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+::1 - - [15/Jun/2023:09:37:52 +0000] "GET /documentation HTTP/1.1" 404 152 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+::1 - - [15/Jun/2023:09:37:56 +0000] "GET /documentation.html HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
