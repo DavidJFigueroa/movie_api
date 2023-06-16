@@ -79,3 +79,7 @@ Timestamp: Tue Jun 13 2023 22:45:37 GMT+0200 (Central European Summer Time)
 ::1 - - [15/Jun/2023:14:43:24 +0000] "PUT /users/david/favorites HTTP/1.1" 200 69 "-" "PostmanRuntime/7.32.2"
 ::1 - - [15/Jun/2023:14:44:48 +0000] "DELETE /users HTTP/1.1" 200 49 "-" "PostmanRuntime/7.32.2"
 ::1 - - [15/Jun/2023:14:48:16 +0000] "DELETE /users/david/favorites HTTP/1.1" 200 74 "-" "PostmanRuntime/7.32.2"
+::1 - - [16/Jun/2023:06:00:02 +0000] "DELETE /users/david/favorites/shrek HTTP/1.1" 200 74 "-" "PostmanRuntime/7.32.2"
+::1 - - [16/Jun/2023:06:00:22 +0000] "PUT /users/david/favorites/shrek HTTP/1.1" 200 69 "-" "PostmanRuntime/7.32.2"
+::1 - - [16/Jun/2023:06:00:54 +0000] "GET /documentation.html HTTP/1.1" 200 3309 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+::1 - - [16/Jun/2023:06:00:54 +0000] "GET /documentation.css HTTP/1.1" 304 - "http://localhost:8080/documentation.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"

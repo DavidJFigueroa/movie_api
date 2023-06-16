@@ -58,13 +58,13 @@ app.put("/users/:name", (req, res) => {
   res.send("Successful PUT request for users to update their info");
 });
 
-app.put("/users/:name/favorites", (req, res) => {
+app.put("/users/:name/favorites/:movieID", (req, res) => {
   res.send(
     "Successful PUT request for users to add movies to their favorite list"
   );
 });
 
-app.delete("/users/:name/favorites", (req, res) => {
+app.delete("/users/:name/favorites/:movieID", (req, res) => {
   res.send(
     "Successful PUT request for users to remove movies from their favorite list"
   );

@@ -74,24 +74,24 @@
         </tr>
         <tr>
           <td>Allow new user to add a movie to their list of favorites</td>
-          <td>/users/[name]/favorites</td>
+          <td>/users/[name]/favorites/[movieID]</td>
           <td class="method">PUT</td>
           <td>none</td>
-          <td>A text message confirming the movie was added</td>
+          <td>JSON</td>
         </tr>
         <tr>
           <td>Allow new user to remove a movie from their list of favorites</td>
-          <td>/users/[name]/favorites</td>
+          <td>/users/[name]/favorites/[movieID]</td>
           <td class="method">DELETE</td>
           <td>none</td>
-          <td>A text message confirming the deletion</td>
+          <td>JSON</td>
         </tr>
         <tr>
           <td>Allow new user to deregister</td>
           <td>/users/[name]</td>
           <td class="method">DELETE</td>
           <td>none</td>
-          <td>A text message indication the successful deregistration</td>
+          <td>JSON</td>
         </tr>
       </table>
     </main>
