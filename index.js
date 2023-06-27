@@ -196,16 +196,18 @@ app.post("/users/:Username/movies/:MovieID", (req, res) => {
     {
       $push: {FavoriteMovies: req.params.MovieID},
     },
-    {new: true}, // This line makes sure that the updated document is returned
-    (err, updatedUser) => {
-      if (err) {
-        console.error(err);
-        res.status(500).send("Error: " + err);
+    {new: true}).then((updatedUser) => {
+      if (!updatedUser) {
+        return res.status(404).send("Error: User doesn't exist");
       } else {
         res.json(updatedUser);
       }
+    })
+    .catch((error) => {
+      console.error(error);
+      res.status(500).send('Error: ' + error);
     }
-  );
+    )
 });
 
 // Delete movie from favorite movies list
@@ -216,16 +218,18 @@ app.delete("/users/:Username/movies/:MovieID", (req, res) => {
     {
       $pull: {FavoriteMovies: req.params.MovieID},
     },
-    {new: true}, // This line makes sure that the updated document is returned
-    (err, updatedUser) => {
-      if (err) {
-        console.error(err);
-        res.status(500).send("Error: " + err);
+    {new: true}).then((updatedUser) => {
+      if (!updatedUser) {
+        return res.status(404).send("Error: User doesn't exist");
       } else {
         res.json(updatedUser);
       }
+    })
+    .catch((error) => {
+      console.error(error);
+      res.status(500).send('Error: ' + error);
     }
-  );
+    )
 });
 
 // handling errors
