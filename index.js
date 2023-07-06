@@ -32,7 +32,9 @@ app.use(express.urlencoded({extended: false}));
 const cors = require("cors");
 app.use(cors());
 
-let allowedOrigins = ["http://localhost:8080", "http://testsite.com"];
+// let allowedOrigins = ["http://localhost:8080", "http://testsite.com"];
+
+let allowedOrigins = ["*"];
 
 app.use(
   cors({
