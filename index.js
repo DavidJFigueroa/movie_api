@@ -26,7 +26,8 @@ mongoose.connect("process.env.CONNECTION_URI", {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json());
-app.use(express.static("public"));
+// app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({extended: false}));
 
 const cors = require("cors");
