@@ -24,13 +24,10 @@ const Users = Models.User;
 // });
 
 mongoose
-  .connect(
-    "mongodb+srv://myflixDBadmin:ilikemovies666@myflixdb.c1fyxil.mongodb.net/myFlixDB?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect(process.env.CONNECTION_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log("Connected to the database"))
   .catch((error) =>
     console.log("Database connection failed. Error message: ", error.message)
