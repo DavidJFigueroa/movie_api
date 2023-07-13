@@ -24,7 +24,7 @@ const Users = Models.User;
 // });
 
 mongoose.connect(
-  "mongodb+srv://myflixDBadmin:ilikemovies666@myflixdb.c1fyxil.mongodb.net/?retryWrites=true&w=majority",
+  "mongodb+srv://myflixDBadmin:ilikemovies666@myflixdb.c1fyxil.mongodb.net/myFlixDB?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
