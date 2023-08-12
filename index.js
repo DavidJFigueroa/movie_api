@@ -45,7 +45,11 @@ app.use(cors());
 
 // let allowedOrigins = ["http://localhost:8080", "http://testsite.com"];
 
-let allowedOrigins = ["*", "http://localhost:1234", "https://classicflix-djf.netlify.app/"];
+let allowedOrigins = [
+  "*",
+  "http://localhost:1234",
+  "https://classicflix-djf.netlify.app/",
+];
 
 app.use(
   cors({
@@ -356,7 +360,7 @@ app.delete(
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send("Whoopsie! Something is wrong!");
+  res.status(500).json({error: "Whoopsie! Something is wrong!"});
 });
 
 // listen for requests
