@@ -26,7 +26,7 @@ The Movie API is a RESTful API created with MongoDB as the database and hosted o
 
 **Request Body Data Format**: None
 
-**Response Body Data Format**:
+**Response Body Data Format**: JSON object holding data about movies
 
 ```json
 {
@@ -61,7 +61,7 @@ The Movie API is a RESTful API created with MongoDB as the database and hosted o
 
 **Request Body Data Format**: None
 
-**Response Body Data Format**:
+**Response Body Data Format**: JSON object holding data about the movie
 
 ```json
 {
@@ -93,7 +93,7 @@ The Movie API is a RESTful API created with MongoDB as the database and hosted o
 
 **Request Body Data Format**: None
 
-**Response Body Data Format**:
+**Response Body Data Format**: JSON object holding data about the genre
 
 ```json
 {
@@ -129,7 +129,7 @@ The Movie API is a RESTful API created with MongoDB as the database and hosted o
 
 **HTTP Method**: POST
 
-**Request Body Data Format**:
+**Request Body Data Format**: A JSON object holding data about the user to add.
 
 ```json
 {
@@ -140,17 +140,7 @@ The Movie API is a RESTful API created with MongoDB as the database and hosted o
 }
 ```
 
-**Response Body Data Format**:
-
-```json
-{
-  "User": {
-    "Username": "Shark",
-    "Email": "shark@blub.com",
-    "Birthday": "1970-11-08"
-  }
-}
-```
+**Response Body Data Format**: A JSON object holding data about the user that was added
 
 ### Allow user to update their info (username)
 
@@ -162,21 +152,14 @@ The Movie API is a RESTful API created with MongoDB as the database and hosted o
 
 ```json
 {
+  "Username": "Shark",
+  "Email": "shark@blub.com",
+  "Birthday": "1970-11-08",
   "Password": "waterworld888"
 }
 ```
 
-**Response Body Data Format**:
-
-```json
-{
-  "User": {
-    "Username": "Shark",
-    "Email": "shark@blub.com",
-    "Birthday": "1970-11-08"
-  }
-}
-```
+**Response Body Data Format**: A JSON object holding data about the user that was added
 
 ### Allow user to add a movie to their favorites
 
@@ -186,6 +169,8 @@ The Movie API is a RESTful API created with MongoDB as the database and hosted o
 
 **Request Body Data Format**: None
 
+**Response Body Data Format**: JSON
+
 ### Allow user to remove a movie from their favorites
 
 **URL**: `/users/[name]/favorites/[movieID]`
@@ -194,8 +179,14 @@ The Movie API is a RESTful API created with MongoDB as the database and hosted o
 
 **Request Body Data Format**: None
 
+**Response Body Data Format**: JSON
+
 ### Allow user to deregister
 
 **URL**: `/users/[name]`
 
-\*\*HTTP
+**HTTP Method**: DELETE
+
+**Request Body Data Format**: None
+
+**Response Body Data Format**: JSON
