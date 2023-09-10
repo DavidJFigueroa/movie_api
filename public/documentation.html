@@ -1,147 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie API Documentation</title>
-    <link rel="stylesheet" href="documentation.css" />
+    <meta charset="utf-8" />
+    <title>JSDoc: Module: Movie API Calls</title>
+
+    <script src="../out/scripts/prettify/prettify.js"></script>
+    <script src="../out/scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../out/styles/prettify-tomorrow.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../out/styles/jsdoc-default.css" />
   </head>
+
   <body>
-    <header></header>
-    <main>
-      <h1>Movie API</h1>
-      <p>
-        Returns a list of movies or data about a single movie, genre or
-        director. Also allows users to register, update their user
-        info(username), add or remove movies from their list of favorites or
-        deregister.
-      </p>
-      <h2>Resource Information</h2>
-      <table>
-        <tr>
-          <th>Business Logic</th>
-          <th>URL</th>
-          <th>HTTP Method</th>
-          <th>Request body data format</th>
-          <th>Response body data format</th>
-        </tr>
-        <tr>
-          <td>Return a list of movies to the user</td>
-          <td>/movies</td>
-          <td class="method">GET</td>
-          <td>none</td>
-          <td>A JSON object holding data about all the movies. </td>
-        </tr>
-        <tr>
-          <td>
+    <div id="main">
+      <h1 class="page-title">Module: Movie API Calls</h1>
+
+      <section>
+        <header></header>
+
+        <article>
+          <div class="container-overview">
+            <div class="description">API Calls for Movie API</div>
+
+            <dl class="details">
+              <dt class="tag-source">Source:</dt>
+              <dd class="tag-source">
+                <ul class="dummy">
+                  <li>
+                    <a href="../out/index.js.html">index.js</a>,
+                    <a href="../out/index.js.html#line1">line 1</a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+
+          <h3 class="subsection-title">Methods</h3>
+
+          <h4 class="name" id="~DELETE/users/%5Bname%5D">
+            <span class="type-signature">(inner) </span>DELETE
+            /users/[name]<span class="signature">()</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <div class="description">Allow new user to deregister</div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="type">
+                  <span class="param-type">authentication</span>
+                </td>
+
+                <td class="description last">Bearer token (JWT)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="index.js.html">index.js</a>,
+                  <a href="index.js.html#line384">line 384</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Examples</h5>
+
+          <pre class="prettyprint"><code>// Request data format
+none</code></pre>
+
+          <pre
+            class="prettyprint"><code>// Response data format: JSON </code></pre>
+
+          <h4
+            class="name"
+            id="~DELETE/users/%5Bname%5D/favorites/%5BmovieID%5D">
+            <span class="type-signature">(inner) </span>DELETE
+            /users/[name]/favorites/[movieID]<span class="signature">()</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <div class="description">
+            Allow user to remove a movie from their favorites
+          </div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="type">
+                  <span class="param-type">authentication</span>
+                </td>
+
+                <td class="description last">Bearer token (JWT)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="index.js.html">index.js</a>,
+                  <a href="index.js.html#line456">line 456</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Examples</h5>
+
+          <pre class="prettyprint"><code>// Request data format
+none</code></pre>
+
+          <pre
+            class="prettyprint"><code>// Response data format: JSON </code></pre>
+
+          <h4 class="name" id="~GET/directors/%5Bname%5D">
+            <span class="type-signature">(inner) </span>GET
+            /directors/[name]<span class="signature">()</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <div class="description">Return data about a director by name</div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="type">
+                  <span class="param-type">authentication</span>
+                </td>
+
+                <td class="description last">Bearer token (JWT)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="index.js.html">index.js</a>,
+                  <a href="index.js.html#line182">line 182</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Examples</h5>
+
+          <pre class="prettyprint"><code>// Request data format
+none</code></pre>
+
+          <pre class="prettyprint"><code>// Response data format: A JSON object
+[
+   {
+   "Director": {
+      "Name": "",
+      "Bio": "",
+      "Birth": "",
+      "Death": "",
+    }
+    }
+]</code></pre>
+
+          <h4 class="name" id="~GET/genres/%5Bname%5D">
+            <span class="type-signature">(inner) </span>GET /genres/[name]<span
+              class="signature"
+              >()</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <div class="description">Return data about a genre by name</div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="type">
+                  <span class="param-type">authentication</span>
+                </td>
+
+                <td class="description last">Bearer token (JWT)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="index.js.html">index.js</a>,
+                  <a href="index.js.html#line147">line 147</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Examples</h5>
+
+          <pre class="prettyprint"><code>// Request data format
+none</code></pre>
+
+          <pre class="prettyprint"><code>// Response data format: A JSON object
+[
+  {
+  "Genre": {
+      "Name": "",
+      "Description": "",
+    }
+   }
+]</code></pre>
+
+          <h4 class="name" id="~GET/movies">
+            <span class="type-signature">(inner) </span>GET /movies<span
+              class="signature"
+              >()</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <div class="description">Return a list of movies to the user</div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="type">
+                  <span class="param-type">authentication</span>
+                </td>
+
+                <td class="description last">Bearer token (JWT)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="index.js.html">index.js</a>,
+                  <a href="index.js.html#line59">line 59</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Examples</h5>
+
+          <pre class="prettyprint"><code>// Request data format
+none</code></pre>
+
+          <pre
+            class="prettyprint"><code>// Response data format: Array of JSON objects
+[
+  {
+    "Title": "",
+    "Description": "",
+    "Genre": {
+      "Name": "",
+      "Description": "",
+    },
+    "Director": {
+      "Name": "",
+      "Bio": "",
+    },
+    "Actors": [""],
+    "ImagePath": "",
+    "Featured": Boolean,
+  }
+]</code></pre>
+
+          <h4 class="name" id="~GET/movies/%5Bname%5D">
+            <span class="type-signature">(inner) </span>GET /movies/[name]<span
+              class="signature"
+              >()</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <div class="description">
             Return data (description, genre, director, image URL, whether it’s
             featured or not) about a single movie by name
-          </td>
-          <td>/movies/[name]</td>
-          <td class="method">GET</td>
-          <td>none</td>
-          <td>A JSON object holding data about the movie. <br>
-            <br>
-            Example:  <br>
-            { <br>
-              "Genre": { <br>
-                  "Name": "Thriller", <br>
-                  "Description": "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience." <br>
-              }, <br>
-              "Director": { <br>
-                  "Name": "Jonathan Demme", <br>
-                  "Bio": "Jonathan Demme was born on 22 February 1944 in Baldwin, Long Island, New York, USA. He was a director and producer, known for The Silence of the Lambs (1991), Rachel Getting Married (2008) and Philadelphia (1993). He was previously married to Joanne Howard and Evelyn Purcell. He died on 26 April 2017 in Manhattan, New York City, New York, USA.", <br>
-                  "Birth": "1944", <br>
-                  "Death": "2017" <br>
-              }, <br>
-              "Actors": [], <br>
-              "_id": "649598dc844b0d20893f1860", <br>
-              "Title": "Silence of the Lambs", <br>
-              "Description": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.", <br>
-              "ImagePath": "silenceofthelambs.png", <br>
-              "Featured": true <br>
-          }</td>
-        </tr>
-        <tr>
-          <td>Return data about a genre by name</td>
-          <td>/genres/[name]</td>
-          <td class="method">GET</td>
-          <td>none</td>
-          <td>A JSON object holding data about the genre. <br>
-            <br>
-            Example:  <br>
-            { <br>
-              "Genre": { <br>
-                  "Name": "Thriller", <br>
-                  "Description": "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience." <br>
-              } <br>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Return data (bio, birth year, death year) about a director by name.
-          </td>
-          <td>/directors/[name]</td>
-          <td class="method">GET</td>
-          <td>none</td>
-          <td>A JSON object holding data about the director.  <br>
-            <br>
-            Example:  <br>
-            { <br>
-              "Name": "Alfred Hitchcock", <br>
-              "Bio": "Alfred Hitchcock was an English director and filmmaker. Popularly known as the 'Master of Suspense' for his use of innovative film techniques in thrillers", <br>
-              "Birth": "1899", <br>
-              "Death": "1980" <br>
-          } <br></td>
-        </tr>
-        <tr>
-          <td>Allow new user to register</td>
-          <td>/users</td>
-          <td class="method">POST</td>
-          <td>A JSON object holding data about the user to add. <br>
-          Example: <br>
-          {<br>
-            "Username" : "Shark",<br>
-            "Password" : "waterworld999",<br>
-            "Email" : "shark@blub.com",<br>
-            "Birthday" : "1970-11-08"<br>
-        }<br></td>
-          <td>A JSON object holding data about the user that was added</td>
-        </tr>
-        <tr>
-          <td>Allow new user to update their info (username)</td>
-          <td>/users/[name]</td>
-          <td class="method">PUT</td>
-          <td>A JSON object holding data about the user to add. <br>
-          Example: <br>
-          {<br>
-            "Password" : "waterworld888"<br>
-        }<br></td>
-          <td>A JSON object holding data about the user that was added</td>
-        </tr>
-        <tr>
-          <td>Allow new user to add a movie to their list of favorites</td>
-          <td>/users/[name]/favorites/[movieID]</td>
-          <td class="method">PUT</td>
-          <td>none</td>
-          <td>JSON</td>
-        </tr>
-        <tr>
-          <td>Allow new user to remove a movie from their list of favorites</td>
-          <td>/users/[name]/favorites/[movieID]</td>
-          <td class="method">DELETE</td>
-          <td>none</td>
-          <td>JSON</td>
-        </tr>
-        <tr>
-          <td>Allow new user to deregister</td>
-          <td>/users/[name]</td>
-          <td class="method">DELETE</td>
-          <td>none</td>
-          <td>JSON</td>
-        </tr>
-      </table>
-    </main>
-    <footer></footer>
+          </div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="type">
+                  <span class="param-type">authentication</span>
+                </td>
+
+                <td class="description last">Bearer token (JWT)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="../out/index.js.html">index.js</a>,
+                  <a href="../out/index.js.html#line103">line 103</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Examples</h5>
+
+          <pre class="prettyprint"><code>// Request data format
+none</code></pre>
+
+          <pre class="prettyprint"><code>// Response data format: A JSON object
+[
+  {
+    "Title": "",
+    "Description": "",
+    "Genre": {
+      "Name": "",
+      "Description": "",
+    },
+    "Director": {
+      "Name": "",
+      "Bio": "",
+    },
+    "Actors": [""],
+    "ImagePath": "",
+    "Featured": Boolean,
+  }
+]</code></pre>
+
+          <h4 class="name" id="~POST/users">
+            <span class="type-signature">(inner) </span>POST /users<span
+              class="signature"
+              >()</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <div class="description">Allow new user to register</div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="type">
+                  <span class="param-type">authentication</span>
+                </td>
+
+                <td class="description last">Bearer token (JWT)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="../out/index.js.html">index.js</a>,
+                  <a href="../out/index.js.html#line253">line 253</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Examples</h5>
+
+          <pre class="prettyprint"><code>// Request data format
+  [
+    {
+    "Username" : "",
+    "Password" : "",
+    "Email" : "",
+    "Birthday" : ""
+     }
+  ]</code></pre>
+
+          <pre
+            class="prettyprint"><code>// Response data format: A JSON object holding data about the user that was added</code></pre>
+
+          <h4 class="name" id="~PUT/users/%5Bname%5D">
+            <span class="type-signature">(inner) </span>PUT /users/[name]<span
+              class="signature"
+              >()</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <div class="description">Allow new user to register</div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="type">
+                  <span class="param-type">authentication</span>
+                </td>
+
+                <td class="description last">Bearer token (JWT)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="../out/index.js.html">index.js</a>,
+                  <a href="../out/index.js.html#line318">line 318</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Examples</h5>
+
+          <pre class="prettyprint"><code>// Request data format
+  [
+    {
+    "Username" : "",
+    "Password" : "",
+    "Email" : "",
+    "Birthday" : ""
+      }
+   ]</code></pre>
+
+          <pre
+            class="prettyprint"><code>// Response data format: A JSON object holding data about the user that was added</code></pre>
+
+          <h4 class="name" id="~PUT/users/%5Bname%5D/favorites/%5BmovieID%5D">
+            <span class="type-signature">(inner) </span>PUT
+            /users/[name]/favorites/[movieID]<span class="signature">()</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <div class="description">
+            Allow user to add a movie to their favorites
+          </div>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="type">
+                  <span class="param-type">authentication</span>
+                </td>
+
+                <td class="description last">Bearer token (JWT)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="../out/index.js.html">index.js</a>,
+                  <a href="../out/index.js.html#line417">line 417</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Examples</h5>
+
+          <pre class="prettyprint"><code>// Request data format
+none</code></pre>
+
+          <pre
+            class="prettyprint"><code>// Response data format: JSON </code></pre>
+        </article>
+      </section>
+    </div>
+
+    <nav>
+      <h2><a href="../out/index.html">Home</a></h2>
+      <h3>Modules</h3>
+      <ul>
+        <li>
+          <a href="../out/module-Movie%2520API%2520Calls.html"
+            >Movie API Calls</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <br class="clear" />
+
+    <footer>
+      Documentation generated by
+      <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sun Sep 10
+      2023 11:01:55 GMT+0200 (Central European Summer Time)
+    </footer>
+
+    <script>
+      prettyPrint();
+    </script>
+    <script src="../out/scripts/linenumber.js"></script>
   </body>
 </html>
